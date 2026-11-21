@@ -1,0 +1,4 @@
+Diagnostic probe (not one of the five automated tests)
+GET https://fakerestapi.azurewebsites.net/api/v1/Books/501
+HTTP 404
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"00-c6667503b3e5494aae9fce26cf5089ac-f7d0f9a7398af34f-00"}
