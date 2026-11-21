@@ -1,0 +1,12 @@
+{
+  "existingBooks": [{"id": 1, "title": "Book 1", "pageCount": 100}],
+  "newBooks": [{
+    "id": 501,
+    "title": "Automation Assessment Book",
+    "description": "Synthetic test data for the QC assessment.",
+    "pageCount": 250,
+    "excerpt": "A small reusable automation example.",
+    "publishDate": "2025-01-15T12:00:00Z"
+  }],
+  "missingBooks": [{"id": 2147483647, "status": 404, "title": "Not Found"}]
+}
