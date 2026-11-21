@@ -1,0 +1,14 @@
+POST https://fakerestapi.azurewebsites.net/api/v1/Books
+Request body: {"id":501,"title":"Automation Assessment Book","description":"Synthetic test data for the QC assessment.","pageCount":250,"excerpt":"A small reusable automation example.","publishDate":"2025-01-15T12:00:00Z"}
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8; v=1.0
+
+{
+    "id": 501,
+    "title": "Automation Assessment Book",
+    "description": "Synthetic test data for the QC assessment.",
+    "pageCount": 250,
+    "excerpt": "A small reusable automation example.",
+    "publishDate": "2025-01-15T12:00:00Z"
+}

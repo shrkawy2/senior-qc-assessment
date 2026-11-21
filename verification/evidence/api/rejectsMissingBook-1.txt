@@ -1,0 +1,12 @@
+GET https://fakerestapi.azurewebsites.net/api/v1/Books/2147483647
+Request body: null
+
+HTTP/1.1 404 Not Found
+Content-Type: application/problem+json; charset=utf-8; v=1.0
+
+{
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+    "title": "Not Found",
+    "status": 404,
+    "traceId": "00-fee58fc1e6ffd749bcfc47e8771a8a9f-ad3f1f5400709243-00"
+}
