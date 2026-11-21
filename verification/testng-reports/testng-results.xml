@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[UI evidence: target/evidence/ui/displaysDynamicallyLoadedText-PASS.png]]>
+    </line>
+    <line>
+      <![CDATA[UI evidence: target/evidence/ui/uploadsSmallImage-PASS.png]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-11-19T11:05:28 EET" name="Surefire suite" finished-at="2026-11-19T11:05:58 EET" duration-ms="30404">
+    <groups>
+      <group name="ui">
+        <method signature="UiTests.displaysDynamicallyLoadedText()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" name="displaysDynamicallyLoadedText" class="com.assessment.ui.tests.UiTests"/>
+        <method signature="UiTests.uploadsSmallImage()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" name="uploadsSmallImage" class="com.assessment.ui.tests.UiTests"/>
+      </group> <!-- ui -->
+      <group name="api">
+        <method signature="BooksApiTests.createsBookAndEchoesPayload(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" name="createsBookAndEchoesPayload" class="com.assessment.api.tests.BooksApiTests"/>
+        <method signature="BooksApiTests.getsExistingBook(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" name="getsExistingBook" class="com.assessment.api.tests.BooksApiTests"/>
+        <method signature="BooksApiTests.rejectsMissingBook(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" name="rejectsMissingBook" class="com.assessment.api.tests.BooksApiTests"/>
+      </group> <!-- api -->
+    </groups>
+    <test started-at="2026-11-19T11:05:28 EET" name="Surefire test" finished-at="2026-11-19T11:05:58 EET" duration-ms="30404">
+      <class name="com.assessment.api.tests.BooksApiTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" started-at="2026-11-19T11:05:28 EET" name="setUp" finished-at="2026-11-19T11:05:29 EET" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assessment.api.tests.BooksApiTests.createsBookAndEchoesPayload(com.fasterxml.jackson.databind.JsonNode)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createsBookAndEchoesPayload(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" started-at="2026-11-19T11:05:29 EET" name="createsBookAndEchoesPayload" description="POST a book and validate every returned field without assuming persistence" data-provider="newBooks" finished-at="2026-11-19T11:05:34 EET" duration-ms="5133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":501,"title":"Automation Assessment Book","description":"Synthetic test data for the QC assessment.","pageCount":250,"excerpt":"A small reusable automation example.","publishDate":"2025-01-15T12:00:00Z"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createsBookAndEchoesPayload -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" started-at="2026-11-19T11:05:34 EET" name="setUp" finished-at="2026-11-19T11:05:34 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assessment.api.tests.BooksApiTests.getsExistingBook(com.fasterxml.jackson.databind.JsonNode)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getsExistingBook(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" started-at="2026-11-19T11:05:34 EET" name="getsExistingBook" description="GET an existing book and validate its contract and expected fields" data-provider="existingBooks" finished-at="2026-11-19T11:05:34 EET" duration-ms="435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":1,"title":"Book 1","pageCount":100}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getsExistingBook -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" started-at="2026-11-19T11:05:34 EET" name="setUp" finished-at="2026-11-19T11:05:34 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assessment.api.tests.BooksApiTests.rejectsMissingBook(com.fasterxml.jackson.databind.JsonNode)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="rejectsMissingBook(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.assessment.api.tests.BooksApiTests@4c1d9d4b]" started-at="2026-11-19T11:05:34 EET" name="rejectsMissingBook" description="GET a non-existent int32 book ID and validate the 404 problem response" data-provider="missingBooks" finished-at="2026-11-19T11:05:35 EET" duration-ms="363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":2147483647,"status":404,"title":"Not Found"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rejectsMissingBook -->
+      </class> <!-- com.assessment.api.tests.BooksApiTests -->
+      <class name="com.assessment.ui.tests.UiTests">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" started-at="2026-11-19T11:05:35 EET" name="startBrowser" finished-at="2026-11-19T11:05:37 EET" duration-ms="2596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="displaysDynamicallyLoadedText()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" started-at="2026-11-19T11:05:37 EET" name="displaysDynamicallyLoadedText" description="Open Dynamic Loading Example 2, start, wait for result and verify text" finished-at="2026-11-19T11:05:48 EET" duration-ms="10278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displaysDynamicallyLoadedText -->
+        <test-method is-config="true" signature="captureEvidenceAndClose(org.testng.ITestResult)[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" started-at="2026-11-19T11:05:48 EET" name="captureEvidenceAndClose" finished-at="2026-11-19T11:05:53 EET" duration-ms="5344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=displaysDynamicallyLoadedText status=SUCCESS method=UiTests.displaysDynamicallyLoadedText()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[UI evidence: target/evidence/ui/displaysDynamicallyLoadedText-PASS.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- captureEvidenceAndClose -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" started-at="2026-11-19T11:05:53 EET" name="startBrowser" finished-at="2026-11-19T11:05:54 EET" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="uploadsSmallImage()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" started-at="2026-11-19T11:05:54 EET" name="uploadsSmallImage" description="Upload a small image from the home page and verify success and filename" finished-at="2026-11-19T11:05:58 EET" duration-ms="3514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadsSmallImage -->
+        <test-method is-config="true" signature="captureEvidenceAndClose(org.testng.ITestResult)[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0]" started-at="2026-11-19T11:05:58 EET" name="captureEvidenceAndClose" finished-at="2026-11-19T11:05:58 EET" duration-ms="515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadsSmallImage status=SUCCESS method=UiTests.uploadsSmallImage()[pri:0, instance:com.assessment.ui.tests.UiTests@5276e6b0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[UI evidence: target/evidence/ui/uploadsSmallImage-PASS.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- captureEvidenceAndClose -->
+      </class> <!-- com.assessment.ui.tests.UiTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
