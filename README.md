@@ -2,6 +2,12 @@
 
 A small Java automation project covering the requested two browser scenarios and three Books API scenarios. It uses Selenium WebDriver, REST Assured, TestNG, and Maven. Page Objects encapsulate browser interactions; a Books service encapsulates API requests. Test assertions remain in the test layer.
 
+Repository: https://github.com/shrkawy2/senior-qc-assessment
+
+Recorded result: **5 passed, 0 failed, 0 skipped** on 19 November 2026. See the [verification report](verification/VERIFICATION_REPORT.md), [UI screenshots](verification/evidence/ui/), and [API response evidence](verification/evidence/api/). Download or clone the repository to open the HTML reports locally.
+
+The repository is private; reviewers need access before using its URL. The original tested source revision is preserved in `senior-qc-assessment.bundle`. GitHub's browser import creates a separate commit history; the recorded source revision refers to that original bundle, not a GitHub import commit. Only documentation was updated during publication; the tested Java code, data, schema and PNG fixture are unchanged.
+
 ## Prerequisites
 
 - JDK 17 or newer, with `java` and `javac` on PATH.
